@@ -15,6 +15,7 @@
         $jumlahBarang = "";
         $jumlahBarang = "";
         $jenisBarang = "";
+        $pembayaran = "";
     ?>
     <!-- Navbar Section Start -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -80,11 +81,11 @@
                                 </div>
                                 <div class="form-group status-container">
                                     <fieldset>
-                                        <legend>STATUS</legend>
-                                        <label><input type="radio" id="tetap" name="status" value="Tetap"
-                                                <?php if ($status == "Tetap") echo "checked"; ?>> Tetap</label><br>
-                                        <label><input type="radio" id="kontrak" name="status" value="Kontrak"
-                                                <?php if ($status == "Kontrak") echo "checked"; ?>> Kontrak</label>
+                                        <legend>Metode Pembayaran</legend>
+                                        <label><input type="radio" id="cash" name="status" value="Cash"
+                                                <?php if ($pembayaran == "Cash") echo "checked"; ?>> Cash</label><br>
+                                        <label><input type="radio" id="transfer" name="status" value="transfer"
+                                                <?php if ($pembayaran == "Transfer") echo "checked"; ?>> Transfer</label>
                                     </fieldset>
                                     <input type="text" name="status_output" id="status_output" readonly value="<?php echo strtoupper($status); ?>">
                                 </div>
