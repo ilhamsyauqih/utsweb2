@@ -68,7 +68,7 @@
                             <a class="nav-link mx-lg-2" href="./daftar_barang.php">Daftar Barang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Transaksi</a>
+                            <a class="nav-link mx-lg-2" href="#">History Transaksi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Tentang</a>
@@ -89,7 +89,8 @@
             <source src="./images/hero-video.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
-            <h1 class="judul-hero">Selamat Datang <br> Toko Bangunan <br> Ilham</h1>
+            <h1 class="judul-hero">Toko Bangunan <br> Ilham</h1>
+            <h2 class="judul-hero-2">Toko Bangunan Paling Lengkap Dan Terjangkau!</h2>
             <button class="pesan-button">Pesan Produk</button>
         </div>
         <div class="arrow-down">

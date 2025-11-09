@@ -44,7 +44,7 @@
     </nav>
     <!-- Navbar Section End -->
         <section class="pemesanan-section">
-        <div class="form-pemesanan content-spacing mt-lg-tes">
+        <div class="container my-5">
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">

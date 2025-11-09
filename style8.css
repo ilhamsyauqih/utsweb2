@@ -129,6 +129,14 @@ body {
     font-style: normal;
 }
 
+.judul-hero-2 {
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .pesan-button {
     background: none;
     box-shadow: none;
@@ -366,4 +374,16 @@ select:focus {
     font-weight: bold;
     color: #6a553e;
     font-family: Arial;
+}
+
+.container-barang {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ini yang bikin isi ke tengah */
+  gap: 20px; /* opsional untuk jarak antar kartu */
+  width: 100%;
+}
+
+.container {
+  padding-top: 100px;
 }
