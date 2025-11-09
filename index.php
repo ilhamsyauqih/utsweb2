@@ -14,31 +14,42 @@
     $nama = "";
     $jumlahBarang = "";
     $jenisBarang = "";
-    $totalHargaBarang = "";
-    $diskon = "";
+    $totalHargaBarang = 0;
+    $diskon = 0;
     $pembayaran = "";
-    $totalHargaPlusAdmin = "";
-    $layanan = "";
+    $layananTambahan = "";
+    $totalHargaPlusAdmin = 0;
+    $totalHargaKeseluruhan = 0;
     $tampilkanHasil = false;
-
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tampilkanHasil = true;
         $nama = $_POST["nama"];
-        $jumlahBarang = $_POST["jumlahBarang"];
+        $jumlahBarang = (int)$_POST["jumlahBarang"];
         $jenisBarang = $_POST["jenisBarang"];
-        $totalHargaBarang = $_POST["totalHargaBarang"];
-        $diskon = $_POST["diskon"];
+        $totalHargaBarang = (int)$_POST["totalHargaBarang"];
+        $diskon = (int)$_POST["diskon"];
         $pembayaran = $_POST["pembayaran"];
-    }
+        $layananTambahan = isset($_POST["layananTambahan"]) ? $_POST["layananTambahan"] : [];
 
-    //Perhitungan pembayaran
-    if ($pembayaran == "transfer") {
-        $totalHargaPlusAdmin = $totalHargaBarang + 5000;
-    }
+        // Perhitungan admin pembayaran
+        if ($pembayaran == "transfer") {
+            $totalHargaPlusAdmin = $totalHargaBarang + 5000;
+        } else {
+            $totalHargaPlusAdmin = $totalHargaBarang;
+        }
 
-    //Perhitungan layanan tambahan
+        //Perhitungan layanan tambahan
+        $biayaLayanan = 0;
+        foreach ($layananTambahan as $layanan) {
+            if ($layanan == "pengiriman") $biayaLayanan += 100000;
+            if ($layanan == "pemotongan") $biayaLayanan += 10000;
+            if ($layanan == "instalasi") $biayaLayanan += 150000;
+        }
+        $totalHargaKeseluruhan = $totalHargaPlusAdmin + $biayaLayanan;
+    }
     ?>
+
     <!-- Navbar Section Start -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
@@ -124,7 +135,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="diskon"><b>DISKON:</b></label>
-                                    <input class="diskon text-input" type="text" id="diskon" name="diskons" readonly>
+                                    <input class="diskon text-input" type="text" id="diskon" name="diskon" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="totalHargaBarang"><b>TOTAL HARGA BARANG:</b></label>
@@ -133,13 +144,13 @@
                                 <div class="radio-pembayaran form-group">
                                     <label for="pembayaran"><b>PEMBAYARAN :</b></label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioDefault" id="tunai" value="tunai">
+                                        <input class="form-check-input" type="radio" name="pembayaran" id="tunai" value="tunai" <?php if ($pembayaran == "tunai") echo "checked"; ?>>
                                         <label class="form-check-label" for="tunai">
                                             Tunai
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="radioDefault" id="transfer" value="transfer" checked>
+                                        <input class="form-check-input" type="radio" name="pembayaran" id="transfer" value="transfer" <?php if ($pembayaran == "transfer") echo "checked"; ?>>
                                         <label class="form-check-label" for="transfer">
                                             Transfer (+ admin Rp. 5.000)
                                         </label>
@@ -148,19 +159,19 @@
                                 <div class="form-group">
                                     <label for="layananTambahan"><b>LAYANAN TAMBAHAN:</b></label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="pengiriman" id="pengiriman">
+                                        <input class="form-check-input" type="checkbox" name="layananTambahan[]" value="pengiriman" id="pengiriman" <?php if ($layananTambahan == "pengiriman") echo "checked"; ?>>
                                         <label class="form-check-label" for="pengiriman">
                                             Pengiriman Barang (Rp. 100.000)
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="pemotongan" id="pemotongan" checked>
+                                        <input class="form-check-input" type="checkbox" name="layananTambahan[]" value="pemotongan" id="pemotongan" <?php if ($layananTambahan == "pemotongan") echo "checked"; ?>>
                                         <label class="form-check-label" for="pemotongan">
                                             Pemotongan Material (Rp. 10.000)
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="instalasi" id="instalasi" checked>
+                                        <input class="form-check-input" type="checkbox" name="layananTambahan[]" value="instalasi" id="instalasi" <?php if ($layananTambahan == "instalasi") echo "checked"; ?>>
                                         <label class="form-check-label" for="instalasi">
                                             Jasa Instalasi/Pasang (Rp. 150.000)
                                         </label>
@@ -208,16 +219,8 @@
                                         <td><?php echo $totalHargaPlusAdmin; ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Gaji Terima</th>
-                                        <td>Rp. <?php echo number_format($gajiTerima, 0, ',', '.'); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Bonus</th>
-                                        <td>Rp. <?php echo number_format($bonus, 0, ',', '.'); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th>Total Penerimaan</th>
-                                        <td><b>Rp. <?php echo number_format($totalPenerimaan, 0, ',', '.'); ?></b></td>
+                                        <th>Total Harga Keseluruhan</th>
+                                        <td><?php echo $totalHargaKeseluruhan; ?></td>
                                     </tr>
                                 </table>
                             </div>

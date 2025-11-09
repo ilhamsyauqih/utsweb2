@@ -27,6 +27,6 @@ const hitungBarang = () => {
     let formatDiskon = new Intl.NumberFormat('id-ID').format(diskon);
     let formatTotalHarga = new Intl.NumberFormat('id-ID').format(totalSetelahDiskon);
 
-    document.getElementById("diskon").value = "Rp. " + formatDiskon;
-    document.getElementById("totalHargaBarang").value = "Rp. " + formatTotalHarga;
+    document.getElementById("diskon").value = diskon;
+    document.getElementById("totalHargaBarang").value = totalSetelahDiskon;
 }
