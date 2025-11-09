@@ -235,7 +235,7 @@ body {
 }
 
 .content-spacing {
-    margin-top: 250px;
+    margin-top: 200px;
     /* atur bebas sesuai keinginan */
 }
 
@@ -300,4 +300,70 @@ select:focus {
 .gambar-barang {
     width: 300px;
     height: auto;
+}
+
+.tabel-hasil {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #444;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.02);
+}
+
+.tabel-hasil th,
+.tabel-hasil td {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+.tabel-hasil th {
+    background: #f6f1eb;
+    /* lembut */
+    width: 45%;
+    font-weight: 600;
+    color: #3c2f22;
+    border-right: 1px solid #e5d6c7;
+}
+
+.tabel-hasil td {
+    background: #ffffff;
+}
+
+.tabel-hasil tr:nth-child(even) td {
+    background: #faf7f3;
+    /* perbedaan halus */
+}
+
+/* Highlight baris terakhir (Total Harga Keseluruhan) */
+.tabel-hasil tr:last-child th,
+.tabel-hasil tr:last-child td {
+    background: #fdeaea;
+    /* merah soft */
+    color: #b42b2b;
+    font-weight: 700;
+    font-size: 16px;
+    border-top: 2px solid #e8bcbc;
+}
+
+/* Jika ingin tabel dalam card rapi */
+.hasil-card {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e9ddcf;
+    width: fit-content;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Judul */
+.hasil-title {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6a553e;
+    font-family: Arial;
 }

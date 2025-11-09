@@ -208,19 +208,19 @@
                                     </tr>
                                     <tr>
                                         <th>Diskon</th>
-                                        <td><?php echo $diskon; ?></td>
+                                        <td>Rp. <?php echo number_format($diskon, 0, ',', '.'); ?></td>
                                     </tr>
                                     <tr>
                                         <th>Total Harga Barang (Setelah Diskon)</th>
                                         <td>Rp. <?php echo number_format($totalHargaBarang, 0, ',', '.'); ?></td>
                                     </tr>
                                     <tr>
-                                        <th>Tambahan pembayaran</th>
-                                        <td><?php echo $totalHargaPlusAdmin; ?></td>
+                                        <th>Tambahan pembayaran (Jika transfer)</th>
+                                        <td>Rp. <?php echo number_format($totalHargaPlusAdmin, 0, ',', '.'); ?></td>
                                     </tr>
                                     <tr>
                                         <th>Total Harga Keseluruhan</th>
-                                        <td><?php echo $totalHargaKeseluruhan; ?></td>
+                                        <td>Rp. <?php echo number_format($totalHargaKeseluruhan, 0, ',', '.'); ?></td>
                                     </tr>
                                 </table>
                             </div>

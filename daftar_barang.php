@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet">
+    <link href="./style8.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,8 +43,8 @@
         </div>
     </nav>
     <!-- Navbar Section End -->
-        <section class="hero-section">
-        <div class="container content-spacing d-flex align-items-center justify-content-center flex-column" style="margin-top: 20rem !important;">
+        <section class="pemesanan-section">
+        <div class="form-pemesanan content-spacing mt-lg-tes">
             <div class="row g-3">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
