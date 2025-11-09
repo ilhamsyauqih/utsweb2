@@ -1,0 +1,110 @@
+ <div class="row g-3">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Semen
+                        </div>
+                        <div class="card-body">
+                            <div class="list-barang">
+                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

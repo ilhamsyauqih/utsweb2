@@ -1,0 +1,303 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    background-color: #fff8ed;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #7d5436;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-brand:hover {
+    color: #855e42;
+}
+
+.login-button {
+    background-color: #855e42;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #855e42ed;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #000000cc;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        background-color: #855e42;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    .mt-lg-tes {
+        margin-top: 200px;
+    }
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video full layar */
+.back-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Opsional: efek overlay gelap biar teks nanti jelas */
+.hero-section::before {
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
+
+.judul-hero {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.pesan-button {
+    background: none;
+    box-shadow: none;
+    outline: 3px solid #fff;
+    margin-top: 10px;
+    padding: 8px 13px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.arrow-down .arrow {
+    width: 35px;
+    height: 70px;
+    border: 3px solid #fff;
+    border-radius: 40px;
+}
+
+.arrow-down::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    animation: run 2s linear infinite;
+}
+
+@keyframes run {
+    from {
+        opacity: 1;
+        top: 10px;
+    }
+
+    to {
+        opacity: 0;
+        top: 70px;
+    }
+}
+
+.pesan-arrow {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.pemesanan-section {
+    background: url(./images/form-background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-pemesanan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.card-header {
+    background: url(./images/card-header.png) no-repeat center;
+    background-size: cover;
+    padding: 15px 25px;
+    color: #7d5436;
+    font-weight: 700;
+    font-size: 17pt;
+}
+
+.card {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid rgba(251, 193, 122, 0.482);
+    color: #6d401f;
+}
+
+.card-body {
+    background-color: transparent;
+    /* biar blur dari parent tetap terlihat */
+}
+
+.content-spacing {
+    margin-top: 250px;
+    /* atur bebas sesuai keinginan */
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    font-weight: 500;
+}
+
+.text-input,
+select {
+    padding: 6px 8px;
+    border: 1px solid #f3caa7;
+    border-radius: 8px;
+    width: 230px;
+    background-color: #fffcfa;
+}
+
+.text-input:focus,
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(210, 155, 106, 0.4);
+    /* warna fokus lembut */
+    border-color: #d29b6a;
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #825230;
+    outline: #6d401f;
+}
+
+.btn:hover {
+    background-color: #6d401f;
+    color: #fff;
+    outline: #6d401f;
+}
+
+.form-check-input:checked {
+    background-color: #6d401f;
+    border-color: #6d401f;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(253, 181, 13, 0.25);
+}
+
+.form-check-label {
+    width: 300px;
+}
+
+.list-barang {
+    width: fit-content;
+    height: auto;
+}
+
+.gambar-barang {
+    width: 300px;
+    height: auto;
+}
