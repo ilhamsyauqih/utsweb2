@@ -2,6 +2,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Navbar styling start */
 .navbar {
     background-color: #fff8ed;
     border-radius: 15px;
@@ -21,20 +22,6 @@ body {
 
 .navbar-brand:hover {
     color: #855e42;
-}
-
-.login-button {
-    background-color: #855e42;
-    color: #fff;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s background-color;
-}
-
-.login-button:hover {
-    background-color: #855e42ed;
 }
 
 .navbar-toggler {
@@ -83,7 +70,9 @@ body {
         margin-top: 200px;
     }
 }
+/* Navbar styling end */
 
+/* Hero section styling start */
 .hero-section {
     position: relative;
     width: 100%;
@@ -91,7 +80,6 @@ body {
     overflow: hidden;
 }
 
-/* Video full layar */
 .back-video {
     position: absolute;
     top: 50%;
@@ -102,7 +90,6 @@ body {
     object-fit: cover;
 }
 
-/* Opsional: efek overlay gelap biar teks nanti jelas */
 .hero-section::before {
     background: rgba(0, 0, 0, 0.5);
     content: "";
@@ -200,7 +187,9 @@ body {
     transform: translateX(-50%);
     z-index: 3;
 }
+/* Hero section styling end */
 
+/* Form pemesanan styling section start */
 .pemesanan-section {
     background: url(./images/form-background.png);
     background-size: cover;
@@ -330,7 +319,6 @@ select:focus {
 
 .tabel-hasil th {
     background: #f6f1eb;
-    /* lembut */
     width: 45%;
     font-weight: 600;
     color: #3c2f22;
@@ -343,21 +331,17 @@ select:focus {
 
 .tabel-hasil tr:nth-child(even) td {
     background: #faf7f3;
-    /* perbedaan halus */
 }
 
-/* Highlight baris terakhir (Total Harga Keseluruhan) */
 .tabel-hasil tr:last-child th,
 .tabel-hasil tr:last-child td {
     background: #fdeaea;
-    /* merah soft */
     color: #b42b2b;
     font-weight: 700;
     font-size: 16px;
     border-top: 2px solid #e8bcbc;
 }
 
-/* Jika ingin tabel dalam card rapi */
 .hasil-card {
     padding: 20px;
     background: #ffffff;
@@ -367,7 +351,6 @@ select:focus {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.06);
 }
 
-/* Judul */
 .hasil-title {
     margin-bottom: 12px;
     font-size: 18px;
@@ -375,7 +358,9 @@ select:focus {
     color: #6a553e;
     font-family: Arial;
 }
+/* Form pemesanan styling section end */
 
+/* List barang styling start */
 .container-barang {
   display: flex;
   flex-wrap: wrap;
@@ -387,3 +372,5 @@ select:focus {
 .container {
   padding-top: 100px;
 }
+
+/* List barang styling end */

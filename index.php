@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link bootstrap & css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="./style8.css" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Deklarasi variable php, perulangan, perhitungan dan kondisi -->
     <?php
+    // Deklarasi variable
     $nama = "";
     $jumlahBarang = "";
     $jenisBarang = "";
@@ -22,6 +23,7 @@
     $totalHargaKeseluruhan = 0;
     $tampilkanHasil = false;
 
+    // Request form menggunakan metode POST
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tampilkanHasil = true;
         $nama = $_POST["nama"];
@@ -32,16 +34,17 @@
         $pembayaran = $_POST["pembayaran"];
         $layananTambahan = isset($_POST["layananTambahan"]) ? $_POST["layananTambahan"] : [];
 
-        // Perhitungan admin pembayaran
+        // Kondisi dan perhitungan admin pembayaran
         if ($pembayaran == "transfer") {
             $totalHargaPlusAdmin = $totalHargaBarang + 5000;
         } else {
             $totalHargaPlusAdmin = $totalHargaBarang;
         }
 
-        //Perhitungan layanan tambahan
+        //Perulangan dan kondisi layanan tambahan
         $biayaLayanan = 0;
-        foreach ($layananTambahan as $layanan) {
+        for ($i = 0; $i < count($layananTambahan); $i++) {
+            $layanan = $layananTambahan[$i];
             if ($layanan == "pengiriman") $biayaLayanan += 100000;
             if ($layanan == "pemotongan") $biayaLayanan += 10000;
             if ($layanan == "instalasi") $biayaLayanan += 150000;
@@ -53,7 +56,7 @@
     <!-- Navbar Section Start -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="#">Bangunan</a>
+            <a class="navbar-brand me-auto" href="#">TB Ilham</a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -76,11 +79,6 @@
                     </ul>
                 </div>
             </div>
-            <a href="#" class="login-button">Login</a>
-            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
     </nav>
     <!-- Navbar Section End -->
     <!-- Hero Section Start -->
@@ -103,6 +101,7 @@
     <section class="pemesanan-section">
         <div class="form-pemesanan mt-5 mt-lg-5">
             <div class="row g-3">
+                <!-- Form input start -->
                 <div class="<?php echo $tampilkanHasil ? "col-md-6 col-lg-6" : "col-12"; ?></php>">
                     <div class="card">
                         <div class="card-header">
@@ -187,11 +186,13 @@
                         </div>
                     </div>
                 </div>
+                <!-- Form input end -->
+                <!-- Form hasil output start -->
                 <?php if ($tampilkanHasil) { ?>
                     <div class="col-12 col-md-6 col-lg-6">
                         <div class="card">
                             <div class="card-header">
-                                Hasil Output
+                                Hasil Pemesanan
                             </div>
                             <div class="card-body">
                                 <table class="tabel-hasil">
@@ -228,10 +229,12 @@
                         </div>
                     </div>
                 <?php } ?>
+                <!-- Form hasil output end -->
             </div>
         </div>
     </section>
     <!-- Form Pemesanan Section End -->
+    <!-- Link script javascript -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>

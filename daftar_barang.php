@@ -13,7 +13,7 @@
     <!-- Navbar Section Start -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="#">Bangunan</a>
+            <a class="navbar-brand me-auto" href="#">Toko Bangunan</a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -28,7 +28,7 @@
                             <a class="nav-link mx-lg-2 active" href="./daftar_barang.php">Daftar Barang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Transaksi</a>
+                            <a class="nav-link mx-lg-2" href="#">Histori Transaksi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Tentang</a>
@@ -36,13 +36,10 @@
                     </ul>
                 </div>
             </div>
-            <a href="#" class="login-button">Login</a>
-            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </nav>
     <!-- Navbar Section End -->
+    <!-- List semua barang start -->
         <section class="pemesanan-section">
         <div class="container my-5">
             <div class="row g-3">
@@ -157,6 +154,7 @@
             </div>
         </div>
     </section>
+    <!-- List semua barang end -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>

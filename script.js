@@ -1,4 +1,6 @@
+// Membuat fungsi hitung barang
 const hitungBarang = () => {
+    // Deklarasi variable dari PHP
     let jenisBarang = document.getElementById("jenisBarang").value;
     let jumlahBarang = parseFloat(document.getElementById("jumlahBarang").value);
     let totalHargaBarang = 0, hargaBarang = 0, diskon = 0, totalSetelahDiskon = 0;
@@ -24,9 +26,7 @@ const hitungBarang = () => {
     //Perhitungan total harga setelah diskon
     totalSetelahDiskon = totalHargaBarang - diskon;
 
-    let formatDiskon = new Intl.NumberFormat('id-ID').format(diskon);
-    let formatTotalHarga = new Intl.NumberFormat('id-ID').format(totalSetelahDiskon);
-
+    // Mengembalikan nilai perhitungan ke PHP
     document.getElementById("diskon").value = diskon;
     document.getElementById("totalHargaBarang").value = totalSetelahDiskon;
 }
