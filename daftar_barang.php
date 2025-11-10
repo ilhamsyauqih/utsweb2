@@ -61,11 +61,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Pasir
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/pasir.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -73,11 +73,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Batu Bata
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/batu.bata.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -85,11 +85,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Kerikil
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/kerikil.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -97,11 +97,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Triplek
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/triplek.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -109,11 +109,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Keramik
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/keramik.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -121,11 +121,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Cat
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/cat.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -133,11 +133,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Pipa PVC
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/pipa.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -145,11 +145,11 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            Semen
+                            Palu
                         </div>
                         <div class="card-body">
                             <div class="list-barang">
-                                <img class="gambar-barang" src="./images/gambar-barang/semen.gresik.png" alt="">
+                                <img class="gambar-barang" src="./images/gambar-barang/palu.png" alt="">
                             </div>
                         </div>
                     </div>

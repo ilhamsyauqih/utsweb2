@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="jumlahBarang"><b>JUMLAH BARANG:</b></label>
-                                    <input class="text-input" type="text" id="jumlahBarang" name="jumlahBarang" value="<?php echo $jumlahBarang; ?>" required>
+                                    <input class="text-input" type="text" id="jumlahBarang" name="jumlahBarang" oninput="hitungBarang()" value="<?php echo $jumlahBarang; ?>" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="jenisBarang"><b>JENIS BARANG:</b></label>
@@ -239,5 +239,4 @@
         src="./script.js">
     </script>
 </body>
-
 </html>
